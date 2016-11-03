@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site #整站的基本信息
-title: 共乐 #网站标题
-subtitle: IT, 码农, 数据科学, 金融， #网站副标题
+title: 美好生活, 共享快乐 #网站标题
+subtitle: IT, 码农, 数据科学, 金融 ... #网站副标题
 description: Tom Tsang's Blogs #网站描述，给搜索引擎用的，在生成html中的head->meta中可看到
 author: Tom Tsang  #网站作者，在下方显示
 email: 273412935@qq.com #联系邮箱

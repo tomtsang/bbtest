@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>mysql length | 美好生活, 共享快乐</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+    <meta name="author" content="Tom Tsang">
+  
+  
+    <meta name="description" content="转载自: http://yishouce.com/mysql/func/length
+一句话说明: 获取字符串长度的mysql内置函数
+length是mysql的一个用来来获取字符串长度的内置函数方法, 同样的获取字符串长度的还有char_length. length: 是计算字段的长度, utf8编码下,一个汉字是算三个字符,一个数字或字母算一个字符。其他编码下,一个汉字算两个字符, 一个数字或">
+  
+  <meta name="description" content="转载自: http://yishouce.com/mysql/func/length
+一句话说明: 获取字符串长度的mysql内置函数
+length是mysql的一个用来来获取字符串长度的内置函数方法, 同样的获取字符串长度的还有char_length. length: 是计算字段的长度, utf8编码下,一个汉字是算三个字符,一个数字或字母算一个字符。其他编码下,一个汉字算两个字符, 一个数字或">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql length">
+<meta property="og:url" content="http://tomtsang.github.io/2016/11/03/mysql-length/index.html">
+<meta property="og:site_name" content="美好生活, 共享快乐">
+<meta property="og:description" content="转载自: http://yishouce.com/mysql/func/length
+一句话说明: 获取字符串长度的mysql内置函数
+length是mysql的一个用来来获取字符串长度的内置函数方法, 同样的获取字符串长度的还有char_length. length: 是计算字段的长度, utf8编码下,一个汉字是算三个字符,一个数字或字母算一个字符。其他编码下,一个汉字算两个字符, 一个数字或">
+<meta property="og:updated_time" content="2016-11-03T09:42:42.927Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="mysql length">
+<meta name="twitter:description" content="转载自: http://yishouce.com/mysql/func/length
+一句话说明: 获取字符串长度的mysql内置函数
+length是mysql的一个用来来获取字符串长度的内置函数方法, 同样的获取字符串长度的还有char_length. length: 是计算字段的长度, utf8编码下,一个汉字是算三个字符,一个数字或字母算一个字符。其他编码下,一个汉字算两个字符, 一个数字或">
+  
+    <link rel="alternate" href="/atom.xml" title="美好生活, 共享快乐" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+  
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header">
+  <div class="title">
+    <h1><a href="/">美好生活, 共享快乐</a></h1>
+    <p><a href="/">IT, 码农, 数据科学, 金融 ...</a></p>
+  </div>
+  <nav class="nav">
+    <ul>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/archives">Archives</a></li>
+      
+        <li><a href="/reading">Reading</a></li>
+      
+        <li><a href="/about">About</a></li>
+      
+      
+        <li><a href="/atom.xml">RSS</a></li>
+      
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+  <div class="clearfix"></div>
+</header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2016/11/03/mysql-length/">
+  <time datetime="2016-11-03T09:40:11.000Z">
+    2016-11-03
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title">mysql length</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>转载自: <a href="http://yishouce.com/mysql/func/length" target="_blank" rel="external">http://yishouce.com/mysql/func/length</a></p>
+<p>一句话说明: 获取字符串长度的mysql内置函数</p>
+<p>length是mysql的一个用来来获取字符串长度的内置函数方法, 同样的获取字符串长度的还有char_length. length: 是计算字段的长度, utf8编码下,一个汉字是算三个字符,一个数字或字母算一个字符。其他编码下,一个汉字算两个字符, 一个数字或字母算一个字符。</p>
+<p>例子1: 查看mysql字符串的长度</p>
+<pre><code>SELECT LENGTH(&quot;要查看长度的mysql字段/mysql字符串&quot;);
+</code></pre><p>例子2: 根据记录的某个字段长度排序</p>
+<pre><code>SELECT * FROM table WHERE 1 ORDER BY LENGTH(name) ASC;
+</code></pre><p>相关: char_length:在任何编码下, 不管汉字还是数字或者是字母都算是一个字符. CHARACTER_LENGTH(str) CHARACTER_LENGTH()是CHAR_LENGTH()的同义词。 BIT_LENGTH(str) 返回2进制长度.</p>
+
+    
+  </div>
+  <footer>
+    
+      
+  <div class="categories">
+    <a class="categories-link" href="/categories/mysql/">mysql</a>
+  </div>
+
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+</div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2016 <a href="/">Tom Tsang</a>
+  
+</div>
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+</body>
+</html>

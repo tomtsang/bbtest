@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   
-  <title>共乐</title>
+  <title>美好生活, 共享快乐</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   
     <meta name="author" content="Tom Tsang">
@@ -12,15 +12,15 @@
   
   <meta name="description" content="Tom Tsang&apos;s Blogs">
 <meta property="og:type" content="website">
-<meta property="og:title" content="共乐">
+<meta property="og:title" content="美好生活, 共享快乐">
 <meta property="og:url" content="http://tomtsang.github.io/index.html">
-<meta property="og:site_name" content="共乐">
+<meta property="og:site_name" content="美好生活, 共享快乐">
 <meta property="og:description" content="Tom Tsang&apos;s Blogs">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="共乐">
+<meta name="twitter:title" content="美好生活, 共享快乐">
 <meta name="twitter:description" content="Tom Tsang&apos;s Blogs">
   
-    <link rel="alternate" href="/atom.xml" title="共乐" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="美好生活, 共享快乐" type="application/atom+xml">
   
   
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -36,8 +36,8 @@
   <div class="wrapper">
     <header id="header">
   <div class="title">
-    <h1><a href="/">共乐</a></h1>
-    <p><a href="/">IT, 码农, 数据科学, 金融，</a></p>
+    <h1><a href="/">美好生活, 共享快乐</a></h1>
+    <p><a href="/">IT, 码农, 数据科学, 金融 ...</a></p>
   </div>
   <nav class="nav">
     <ul>
@@ -61,6 +61,90 @@
     <div class="content">
 
 
+
+
+  
+    <article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2016/11/03/essay-20161103-a/">
+  <time datetime="2016-11-03T10:09:36.000Z">
+    2016-11-03
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title"><a href="/2016/11/03/essay-20161103-a/">essay 20161103 a</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <h2 id="生产环境、测试环境、开发环境、"><a href="#生产环境、测试环境、开发环境、" class="headerlink" title="生产环境、测试环境、开发环境、"></a>生产环境、测试环境、开发环境、</h2><p><a href="https://my.oschina.net/sancuo/blog/214904" target="_blank" rel="external">https://my.oschina.net/sancuo/blog/214904</a></p>
+<p>开发环境 production environment;</p>
+<p>测试环境 testing environment;</p>
+<p>开发环境 development environment;</p>
+<pre><code>开发环境：开发环境是程序猿们专门用于开发的服务器，配置可以比较随意， 为了开发调试方便，一般打开全部错误报告。
+
+测试环境：一般是克隆一份生产环境的配置，一个程序在测试环境工作不正常，那么肯定不能把它发布到生产机上。
+
+生产环境：是值正式提供对外服务的，一般会关掉错误报告，打开错误日志。
+</code></pre><p>三个环境也可以说是系统开发的三个阶段：开发-&gt;测试-&gt;上线，其中生产环境也就是通常说的真实环境。</p>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+
+  
+    <article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2016/11/03/mysql-length/">
+  <time datetime="2016-11-03T09:40:11.000Z">
+    2016-11-03
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title"><a href="/2016/11/03/mysql-length/">mysql length</a></h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <p>转载自: <a href="http://yishouce.com/mysql/func/length" target="_blank" rel="external">http://yishouce.com/mysql/func/length</a></p>
+<p>一句话说明: 获取字符串长度的mysql内置函数</p>
+<p>length是mysql的一个用来来获取字符串长度的内置函数方法, 同样的获取字符串长度的还有char_length. length: 是计算字段的长度, utf8编码下,一个汉字是算三个字符,一个数字或字母算一个字符。其他编码下,一个汉字算两个字符, 一个数字或字母算一个字符。</p>
+<p>例子1: 查看mysql字符串的长度</p>
+<pre><code>SELECT LENGTH(&quot;要查看长度的mysql字段/mysql字符串&quot;);
+</code></pre><p>例子2: 根据记录的某个字段长度排序</p>
+<pre><code>SELECT * FROM table WHERE 1 ORDER BY LENGTH(name) ASC;
+</code></pre><p>相关: char_length:在任何编码下, 不管汉字还是数字或者是字母都算是一个字符. CHARACTER_LENGTH(str) CHARACTER_LENGTH()是CHAR_LENGTH()的同义词。 BIT_LENGTH(str) 返回2进制长度.</p>
+
+    
+  </div>
+  <footer class="end-sep">
+    
+      
+      
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
 
 
   
@@ -92,7 +176,7 @@
     
       
         <div class="alignleft">
-          <a href="/2016/11/03/tomtsang2/#more" class="more-link">Read More</a>
+          <a href="/2016/11/03/tomtsang2/#more" class="more-link">阅读全文</a>
         </div>
       
       
